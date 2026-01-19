@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 
-struct ContentView: View {
+struct MainTabView: View {
     @StateObject private var storageService = StorageService()
     @StateObject private var router = Router()
     @State private var showSplash = false
@@ -97,6 +97,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainTabView()
         .environmentObject(StorageService())
 }
